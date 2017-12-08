@@ -39,7 +39,27 @@
 
 			</tr>
 		</c:forEach>
-
+		
 		<table>
+</body>
+
+
+
+<body>
+	aaaaaaaaaaaaaaaaaa
+	<form action="BlogServlet" method="POST"></br>
+	teext: <input type="text" name="text"></br>
+	telikesext: <input type="text" name="likes">
+	<select  name="katId"></br>
+		<c:forEach items="${kategorije}" var="i">
+			<option value="${i.id}">${i.naziv}</option>
+
+
+		</c:forEach>
+		</select>
+		<input type="submit" value="Save">
+	</form>
+	</br>
+	<a href="/BlogWEB/pretrazi.jsp"> Pretrazi blogove</a>
 </body>
 </html>
